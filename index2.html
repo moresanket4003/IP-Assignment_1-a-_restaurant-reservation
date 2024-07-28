@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation Portal</title>
+</head>
+<body>
+    <header style="text-align: center;">
+        <img src="https://img.freepik.com/premium-vector/italian-food-restaurant-logo_18099-2526.jpg?w=740" alt="Restaurant Logo" width="300" height="300" style="display: block; margin: 0 auto;">
+        <h1>Restaurant Reservation Portal</h1>
+        <p>Welcome to Italian Food, where the essence of Italy comes alive in every dish. Nestled in the heart of Thane, our restaurant offers a delightful escape to the enchanting landscapes and rich culinary traditions of Italy. From our handmade pasta to our wood-fired pizzas, each meal is crafted with passion, using the freshest ingredients and time-honored recipes passed down through generations. Whether you're enjoying a romantic dinner, a family gathering, or a special celebration, La Dolce Vita promises an unforgettable dining experience filled with warmth, flavor, and Italian hospitality. Buon Appetito!</p>
+    </header>
+    <nav style="text-align: center;">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Special Offers</h2>
+            <details>
+                <summary>Happy Hour</summary>
+                <p>50% off on all drinks from 5 PM to 7 PM!</p>
+            </details>
+            <details>
+                <summary>Weekend Special</summary>
+                <p>Buy one get one free on all desserts.</p>
+            </details>
+        </aside>
+        <section class="main-content">
+            <article>
+                <h2>Make a Reservation</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Reservation Details</legend>
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                        <label for="party-size">Party Size:</label>
+                        <input type="number" id="party-size" name="party-size" min="1" required>
+                        <label for="table">Preferred Table:</label>
+                        <select id="table" name="table">
+                            <option value="window">Window</option>
+                            <option value="booth">Booth</option>
+                            <option value="outdoor">Outdoor</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Special Requests</legend>
+                        <label for="requests">Requests:</label>
+                        <textarea id="requests" name="requests" rows="4"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Reserve">
+                </form>
+                <h2>Our Menu</h2>
+                <figure>
+                    <img src="menu_italian.jpg" alt="menu_italian" width="300" height="400" style="display: block; margin: 0 auto;">
+                    <figcaption style="text-align: center;">Sample Dish - Rs.450</figcaption>
+                </figure>
+                <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+                    <caption>Our Menu</caption>
+                    <thead>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Spaghetti Carbonara</td>
+                            <td>Creamy pasta with pancetta and parmesan</td>
+                            <td>Rs.410</td>
+                        </tr>
+                        <tr>
+                            <td>Margherita Pizza</td>
+                            <td>Classic pizza with fresh mozzarella and basil</td>
+                            <td>Rs.550</td>
+                        </tr>
+                        <tr>
+                            <td>Caesar Salad</td>
+                            <td>Fresh romaine lettuce with Caesar dressing</td>
+                            <td>Rs.399</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Promotional Video</h2>
+                <video width="600" controls style="display: block; margin: 0 auto;">
+                    <source src="italian_recording.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>Contact Us</h2>
+                <address>
+                    <p>1234 Woodfort Lane, Thane</p>
+                    <p>Email: <a href="mailto:info@italyrestaurant.com">info@italyrestaurant.com</a></p>
+                    <p>Phone: (123) 456-7890</p>
+                </address>
+                <h2>Follow Us</h2>
+                <p style="text-align: center;">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+                    <a href="https://www.companywebsite.com" target="_blank">Company Website</a>
+                </p>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <p>Sanket's Restaurant Reservation Portal 300004</p>
+    </footer>
+</body>
+</html>
